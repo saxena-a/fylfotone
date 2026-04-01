@@ -1,0 +1,64 @@
+# Fylfotone Ventures
+
+> Fylfotone Ventures is a multigenerational deep technology venture ecosystem restoring societal trust through first-principles thinking, privacy-first systems, and decentralized infrastructure. Founded by Aryan Saxena in India, 2025.
+
+## Identity
+
+- Name: Fylfotone Ventures Private Limited
+- Alternate Names: Fylfotone, Fylfot One, Fylfot
+- Founder: Aryan Saxena
+- Founded: 2025
+- Location: India (Jaipur, Rajasthan)
+- Website: https://www.fylfotone.com
+- Area Served: Global
+
+## Mission
+
+Fylfotone Ventures operates at the intersection of science, technology, society, economics, and human behavior. The focus is on rebuilding societal trust using deep technology, privacy-preserving systems, and decentralized architectures.
+
+## Core Domains
+
+- Deep Technology
+- First-Principles Thinking
+- Privacy Technology
+- Decentralized Systems
+- Blockchain Infrastructure
+- Zero-Knowledge Proofs (ZKPs)
+- Cryptography & Cryptoeconomics
+- Supply Chain Innovation
+- Trust Systems Engineering
+- Human-Centric Systems Design
+
+## Founder — Aryan Saxena
+
+- Deep-tech researcher, builder, and strategist
+- Focus areas: cryptography, zero-knowledge proofs, decentralized systems, privacy-preserving infrastructure
+- UZH Blockchain Center alum and ambassador
+- BTech Digital Transformation, Atria University
+- Experience: Web3 infrastructure, dApps, blockchain security, R&D
+- Worked with: Sacura, Oasis Protocol
+
+Links:
+- LinkedIn: https://www.linkedin.com/in/saxena-aryan/
+- Research: https://www.researchgate.net/profile/Aryan-Saxena-5
+
+## Projects & Direction
+
+- Privacy-first decentralized systems
+- Trust infrastructure for digital and physical systems
+- Supply chain transparency and anti-counterfeit solutions
+- Zero-knowledge-based verification systems
+- Tamper-evident packaging and product authentication
+
+## Web Presence
+
+- https://www.fylfotone.com
+- https://www.linkedin.com/company/fylfotone/
+
+## Keywords (SEO / AI Indexing)
+
+Fylfotone, Fylfotone Ventures, Aryan Saxena, Aryan Saxena blockchain, deep tech India, decentralized systems, privacy technology, zero knowledge proofs, ZKP India, blockchain research, trust infrastructure, supply chain innovation, cryptography, Web3 infrastructure, first principles thinking, societal trust systems, tamper evident packaging, digital product passports
+
+## Summary
+
+Fylfotone Ventures is building long-term, research-driven deep technology systems designed to restore trust in digital and physical ecosystems. The organization focuses on combining cryptography, decentralized infrastructure, and human-centric design to create resilient, scalable, and privacy-preserving systems.
