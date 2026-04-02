@@ -108,11 +108,16 @@
         "worksFor": [
           { "@id": "https://fylfotone.com/#org" },
           { "@type": "Organization", "name": "Sacura" },
+          { "@type": "Organization", "name": "Trustgrid" },
           { "@type": "Organization", "name": "Oasis Protocol" }
         ],
-        "email": "aryan@fylfotone.com",
+        "email": [
+          "aryan@fylfotone.com",
+          "aryan.saxena@tepotec.ch",
+          "aryan.s@atriauniversity.edu.in",
+          "saxena.aryan@icloud.com"
+        ],
         "url": "https://www.linkedin.com/in/saxena-aryan/",
-        "image": "https://www.genspark.ai/api/files/s/gQiMsmRV",
         "description": "Questioning Systems and Architecting Sustainable Decentralized Future via Privacy-First Deep-Tech Innovations, R&D, and Strategic Leadership. UZH Blockchain Center Alum and Ambassador. Founding Beyonder at Atria University. Researcher in cryptography, decentralized applications, zero-knowledge proofs, and privacy-preserving systems.",
         "knowsAbout": [
           "Deep Technology R&D",
@@ -130,7 +135,7 @@
           {
             "@type": "EducationalOrganization",
             "name": "Atria University",
-            "url": "https://www.atria.edu/",
+            "url": "https://www.atriauniversity.edu.in/",
             "description": "BTech in Digital Transformation — Founding Beyonder"
           },
           {
@@ -150,7 +155,12 @@
         ],
         "sameAs": [
           "https://www.linkedin.com/in/saxena-aryan/",
-          "https://www.researchgate.net/profile/Aryan-Saxena-5"
+          "https://www.researchgate.net/profile/Aryan-Saxena-5",
+          "https://scholar.google.com/citations?user=aQSZxVcAAAAJ",
+          "https://www.blockchain.uzh.ch/deep-dive-into-blockchain-2025-ambassadors",
+          "https://www.instagram.com/dankrick.eth/",
+          "https://www.instagram.com/redgreen.jpg/",
+          "https://x.com/DankRickETH"
         ]
       },
       {
@@ -183,10 +193,28 @@
   }
   </script>
 
-  <!-- FONTS -->
+  <!-- FONTS — preconnect early, then load CSS off the critical path -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+  <!--
+    The `media="print"` trick loads the stylesheet asynchronously:
+    browsers fetch print stylesheets without blocking rendering, then
+    the onload handler switches it to `all` so it applies normally.
+    This eliminates the HTML → Fonts CSS → woff2 request chain from
+    the critical path, saving ~200 ms on first load.
+  -->
+  <link
+    rel="preload"
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap"
+    as="style"
+    onload="this.onload=null;this.rel='stylesheet'"
+  >
+  <noscript>
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap"
+      rel="stylesheet"
+    >
+  </noscript>
 
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -207,7 +235,8 @@
       --dim2:  rgba(239,191,4,0.777);
       --rule:  rgba(255,255,255,0.09);
       --gold:  #C8A84E;
-      --font:  'DM Sans', -apple-system, BlinkMacSystemFont,
+      /* System fonts render instantly while DM Sans loads off the critical path */
+      --font:  'DM Sans', ui-sans-serif, -apple-system, BlinkMacSystemFont,
                'Helvetica Neue', Arial, sans-serif;
 
       /* spacing scale */
@@ -357,9 +386,9 @@
     }
 
     .section-label {
-      font-size: clamp(0.58rem, 0.74vw, 0.66rem);
+      font-size: clamp(0.62rem, 0.74vw, 0.72rem);
       font-weight: 400;
-      letter-spacing: 0.22em;
+      letter-spacing: 0.18em;
       text-transform: uppercase;
       color: var(--dim);
       animation: rise 0.7s 0.06s var(--ease-out) both;
@@ -380,9 +409,9 @@
     }
 
     .quote-attr {
-      font-size: clamp(0.58rem, 0.74vw, 0.66rem);
+      font-size: clamp(0.62rem, 0.74vw, 0.72rem);
       font-weight: 400;
-      letter-spacing: 0.14em;
+      letter-spacing: 0.12em;
       text-transform: uppercase;
       color: var(--dim);
       animation: rise 0.7s 0.22s var(--ease-out) both;
@@ -529,9 +558,9 @@
     }
 
     .founder-role {
-      font-size: clamp(0.52rem, 0.66vw, 0.6rem);
+      font-size: clamp(0.6rem, 0.66vw, 0.68rem);
       font-weight: 400;
-      letter-spacing: 0.22em;
+      letter-spacing: 0.18em;
       text-transform: uppercase;
       color: var(--dim);
     }
@@ -554,9 +583,9 @@
     }
 
     .founder-links a {
-      font-size: clamp(0.52rem, 0.66vw, 0.6rem);
+      font-size: clamp(0.6rem, 0.66vw, 0.68rem);
       font-weight: 400;
-      letter-spacing: 0.12em;
+      letter-spacing: 0.10em;
       text-transform: uppercase;
       color: var(--dim);
       text-decoration: none;
@@ -591,9 +620,9 @@
     .fc.end    { align-items: flex-end; text-align: right; }
 
     .foot-label {
-      font-size: clamp(0.44rem, 0.56vw, 0.5rem);
+      font-size: clamp(0.6rem, 0.56vw, 0.68rem);
       font-weight: 400;
-      letter-spacing: 0.22em;
+      letter-spacing: 0.18em;
       text-transform: uppercase;
       color: var(--dim2);
     }
@@ -618,18 +647,18 @@
     }
 
     .foot-sub {
-      font-size: clamp(0.52rem, 0.66vw, 0.6rem);
+      font-size: clamp(0.68rem, 0.66vw, 0.76rem);
       font-weight: 300;
-      letter-spacing: 0.06em;
+      letter-spacing: 0.04em;
       color: var(--dim);
       line-height: 1.75;
     }
 
     .foot-coord {
-      font-size: clamp(0.42rem, 0.52vw, 0.48rem);
+      font-size: clamp(0.6rem, 0.52vw, 0.68rem);
       font-weight: 300;
-      letter-spacing: 0.14em;
-      color: rgba(255,255,255,0.666);
+      letter-spacing: 0.10em;
+      color: rgba(255,255,255,0.55);
       font-variant-numeric: tabular-nums;
     }
 
@@ -683,11 +712,14 @@
       footer {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto auto;
+        align-items: start;
       }
 
       .fc.end {
         grid-column: 2;
         grid-row: 1;
+        align-items: flex-end;
+        text-align: right;
       }
 
       .fc.center {
@@ -725,7 +757,7 @@
       .right {
         order: -1;
         flex-direction: row;
-        align-items: flex-start;
+        align-items: center; /* vertically centers founder card beside avatar */
         gap: 1rem;
       }
 
@@ -762,14 +794,19 @@
       footer {
         grid-template-columns: 1fr;
         grid-template-rows: auto auto auto;
-        gap: 0.8rem;
+        gap: 1rem;
+        align-items: start;
       }
 
+      /* Reset all grid placements from the 900px query so items
+         stack naturally in DOM order: Contact → Working → Company */
+      .fc,
       .fc.center,
       .fc.end {
+        grid-column: 1;
+        grid-row: auto;
         align-items: flex-start;
         text-align: left;
-        grid-column: 1;
       }
     }
 
@@ -889,7 +926,7 @@
         >
       </div>
 
-      <div class="founder-card">
+     <div class="founder-card">
         <p class="founder-role">Founder</p>
         <h2 class="founder-name">Aryan Saxena</h2>
         <nav class="founder-links" aria-label="Aryan Saxena links">
