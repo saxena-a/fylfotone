@@ -29,7 +29,7 @@ Fylfotone Ventures operates at the intersection of science, technology, society,
 - Trust Systems Engineering
 - Human-Centric Systems Design
 
-## Founder — Aryan Saxena
+## Founder - Aryan Saxena
 
 - Deep-tech researcher, builder, and strategist
 - Focus areas: cryptography, zero-knowledge proofs, decentralized systems, privacy-preserving infrastructure
